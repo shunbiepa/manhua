@@ -1,15 +1,8 @@
 package main
 
 import (
-	"manhuabooks"
-	"fmt"
-	"github.com/PuerkitoBio/goquery"
-	"github.com/djimenez/iconv-go"
-	"github.com/dop251/goja"
-	"log"
-	"net/http"
-	"strings"
-
+	"manhuabooks/MuLv"
+	"manhuabooks/Tool"
 )
 
 const (
@@ -23,7 +16,9 @@ func main() {
 	//JsCeShi()
 	//ZhangJie(JieXi("https://www.iimanhua.cc/comic/2988/945453.html"))
 	//FenLei(JieXi("https://www.iimanhua.cc/shaonianrexue/"))
+	MuLv.MuLu(Tool.JieXi("https://www.iimanhua.cc/comic/2988/index.html"))
 }
+
 //
 //func MuLu(doc *goquery.Document) {
 //	doc.Find("li").Each(func(i int, s *goquery.Selection) {
