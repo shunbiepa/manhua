@@ -1,8 +1,8 @@
 package main
 
 import (
-	"manhuabooks/MuLv"
-	"manhuabooks/Tool"
+	"manhuabooks/service"
+	"manhuabooks/utils"
 )
 
 const (
@@ -16,7 +16,7 @@ func main() {
 	//JsCeShi()
 	//ZhangJie(JieXi("https://www.iimanhua.cc/comic/2988/945453.html"))
 	//FenLei(JieXi("https://www.iimanhua.cc/shaonianrexue/"))
-	MuLv.MuLu(Tool.JieXi("https://www.iimanhua.cc/comic/2988/index.html"))
+	service.ZhangJie(utils.JieXi("https://www.iimanhua.cc/comic/2988/945453.html"))
 }
 
 //
